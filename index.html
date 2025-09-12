@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WL Provas - Portal de Exames Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modal de Segurança Melhorado -->
+<div class="security" id="security" style="display: none;">
+    <div class="security-content">
+        <h1>⚠️ Atenção!</h1>
+        
+        <h3>
+            <span class="security-icon">🔒</span>
+            BravoSec - Sistema de Segurança Ativo
+        </h3>
+        
+        <div class="warning-text">
+            <p><strong>🚨 AVISO IMPORTANTE:</strong></p>
+            <p>Qualquer tentativa de burlar o sistema resultará em banimento imediato da sua conta.</p>
+        </div>
+        
+        <p><strong>Ações proibidas:</strong></p>
+        
+        <div class="shortcuts">
+            • Inspecionar elemento (F12)
+        </div>
+        <div class="shortcuts">
+            • Ctrl + Shift + C (Console)
+        </div>
+        <div class="shortcuts">
+            • Ctrl + Shift + J (DevTools)
+        </div>
+        <div class="shortcuts">
+            • Ctrl + Shift + I (Inspector)
+        </div>
+        <div class="shortcuts">
+            • Botão direito do mouse
+        </div>
+        <div class="shortcuts">
+            • Não arraste nada para o site
+        </div>
+        
+        <p style="margin-top: 1.5rem; color: #00FFFF;">
+            <strong>✅ Clique em "Entendi" para prosseguir com segurança</strong>
+        </p>
+        
+        <button class="btn btn-security" onclick="ok()">
+            Entendi e Aceito
+        </button>
+    </div>
+</div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo-removebg-preview (1).png" alt="WL Provas Logo" />
+                <span class="logo-text" style="pointer-events: none;">Provas</span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Bem-vindo ao <span class="gradient-text">Portal de Provas</span>
+                    </h1>
+                    <p class="hero-description">
+                        Sistema oficial de avaliações online do nosso jogo militar. 
+                        Teste seus conhecimentos e conquiste sua patente.
+                    </p>
+                    <button class="btn btn-primary" id="iniciar-prova" onclick="window.location.href='#comecar'">
+                        <span>🎯</span>
+                        Iniciar Prova
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Funciona?</h2>
+                    <p class="section-description">
+                        As provas são compostas por uma série de perguntas relacionadas ao jogo, matérias e ao exército brasileiro.
+                        Você terá um tempo limitado para responder a cada pergunta. Certifique-se
+                        de ler atentamente as instruções antes de começar.
+                    </p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card instructions">
+                        <div class="card-header">
+                            <h3>📋 Instruções Importantes</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="instruction-list">
+                                <li>📖 Leia cada pergunta com atenção</li>
+                                <li>✅ Selecione a resposta correta</li>
+                                <li>🚫 Não é permitido consultar materiais externos</li>
+                                <li>⏰ Responda dentro do tempo estipulado</li>
+                                <li>🔍 Caso cole na prova será detectado e causará reprovação imediata</li>
+                                <li>📸 Ao terminar tire foto da sua pontuação e nos envie</li>
+                                <li>📱 Uso de dispositivos móveis é proibido durante a prova</li>
+                                <li>🤖 Uso de ChatGPT ou outras IA é proibido</li>
+                                <li>🧠 Não faça com pressa, aproveite o tempo para pensar</li>
+                                <li>🪟 Caso abra nova aba/janela, sua resposta será inválida</li>
+                                <li>🎫 Problemas técnicos? Abra um ticket no Discord</li>
+                                <li>🔧 Inspecionar o site para burlar = banimento</li>
+                                <li>❓ Dúvidas? Entre em contato com o suporte</li>
+                                <li>👁️ Estamos monitorando tudo que acontece aqui</li>
+                                <li>⚠️ Não pense que só você é esperto — o sistema está sempre um passo à frente.</li>
+                                <li>🍀 Boa sorte!</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-card study-guide">
+                        <div class="card-header">
+                            <h3>📚 O que estudar?</h3>
+                        </div>
+                        <div class="card-content">
+                            <ul class="study-list">
+                                <li>
+                                    <span class="subject-icon">🇧🇷</span>
+                                    <span>Português</span>
+                                </li>
+                                <li>
+                                    <span class="subject-icon">🔢</span>
+                                    <span>Matemática</span>
+                                </li>
+                                <li>
+                                    <span class="subject-icon">⚖️</span>
+                                    <span>Leis, regras e regulamentos militares</span>
+                                </li>
+                                <li>
+                                    <span class="subject-icon">🎖️</span>
+                                    <span>Conhecimentos Gerais sobre o Exército</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="start-exam" id="comecar">
+            <div class="container">
+                <div class="exam-card">
+                    <div class="exam-icon">🚀</div>
+                    <h2>Pronto para começar a prova?</h2>
+                    <p>Certifique-se de ter lido todas as instruções antes de prosseguir.</p>
+                    <button class="btn btn-exam" id="btn-exam" onclick="window.location.href='./prvs/Provas.html'">
+                        <span>⚡</span>
+                        Começar Prova Agora
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contato & Suporte</h2>
+                    <p class="section-description">
+                        Se você tiver alguma dúvida ou precisar de assistência, entre em contato conosco:
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <a href="https://discord.gg/your-invite-link" class="contact-card discord">
+                        <div class="contact-icon">
+                            <img src="img/dc.png" alt="Discord" />
+                        </div>
+                        <div class="contact-info">
+                            <h3>Discord</h3>
+                            <p>Entre no nosso servidor oficial</p>
+                        </div>
+                    </a>
+                    
+                    <a href="/cdn-cgi/l/email-protection#93e0e6e3fce1e7f6d3e3fce1e7f2fff7f6e3e1fce5f2e0bdf0fcfe" class="contact-card email">
+                        <div class="contact-icon">
+                            <img src="img/email.png" alt="Email" />
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p><span class="__cf_email__" data-cfemail="a5d6d0d5cad7d1c0e5d5cad7d1c4c9c1c0d5d7cad3c4d68bc6cac8">[email&#160;protected]</span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portal de Provas WL. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Tela de banimento (mantida intacta) -->
+    <div id="banned-screen" class="banned-container" style="display: none;">
+        <div class="banned-content">
+            <div class="banned-icon">🚫</div>
+            <h1 class="banned-title">VOCÊ FOI BANIDO!</h1>
+            <div class="banned-message">
+                <p><strong>VIOLAÇÃO DETECTADA:</strong> Uso não autorizado do botão direito do mouse</p>
+                <p>Seu acesso a este site foi <span class="highlight">PERMANENTEMENTE BLOQUEADO</span></p>
+            </div>
+            
+            <div class="banned-details">
+                <p id="Motivoss"><strong>Motivo:</strong> Tentativa de abrir DevTools detectado</p>
+                <p><strong>Status:</strong> <span class="status-banned">BANIDO</span></p>
+                <p><strong>Data/Hora:</strong> <span id="ban-time"></span></p>
+            </div>
+            
+            <div class="banned-actions">
+                <button id="appeal-btn" class="appeal-btn">📝 Solicitar Recurso</button>
+                <button id="reset-btn" class="reset-btn" style="display: none;">🔄 Ativar conta.</button>
+            </div>
+            
+            <div class="banned-footer">
+                <p>Para mais informações, entre em contato com o administrador.</p>
+                <p><small>Código do Erro: RC_001 - Right Click Violation</small></p>
+            </div>
+        </div>
+    </div>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="scripts/rigthdect.js"></script>
+
+
+</body>
+</html>
