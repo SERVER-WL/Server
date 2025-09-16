@@ -221,13 +221,36 @@ body {
     color: white;
     border: 2px solid transparent;
 }
+#name, #discord{
+    color: #32CD32;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    width: 50%;
+    background: transparent;
+    border: 1px solid #32CD32 ;
+    border-radius: 10px;
+}
 
-.results-container {
+#name::placeholder, #discord::placeholder{
+    color: #32CD32;
+    font-weight: bold;
+    text-transform: uppercase;
     max-width: 600px;
     width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#name:focus, #discord:focus{
+    outline: none;
+    border: 2px solid #00FF7F;
+    box-shadow: 0 0 20px #00FF7F;
+}
+
+#name:hover, #discord:hover{
+    border: 2px solid #00FF7F;
+    scale: 1.02;
 }
 
 .results-card {
